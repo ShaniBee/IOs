@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1843E813262066F800154CC9 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E812262066F800154CC9 /* CheckBoxView.swift */; };
+		18AE7DCE261F50D7007F7C98 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DCD261F50D7007F7C98 /* SignupView.swift */; };
+		18AE7DD1261F5107007F7C98 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DD0261F5107007F7C98 /* ForgotPasswordView.swift */; };
+		18AE7DD5261F66A0007F7C98 /* ImagePIcker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */; };
+		18DDAA6B261F1EBD00A1CBAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAA6A261F1EBD00A1CBAF /* AppDelegate.swift */; };
+		18DDAA6D261F1EBD00A1CBAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAA6C261F1EBD00A1CBAF /* SceneDelegate.swift */; };
+		18DDAA6F261F1EBD00A1CBAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAA6E261F1EBD00A1CBAF /* ContentView.swift */; };
+		18DDAA72261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAA70261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld */; };
+		18DDAA74261F1EBF00A1CBAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DDAA73261F1EBF00A1CBAF /* Assets.xcassets */; };
+		18DDAA77261F1EBF00A1CBAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DDAA76261F1EBF00A1CBAF /* Preview Assets.xcassets */; };
+		18DDAA7A261F1EBF00A1CBAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DDAA78261F1EBF00A1CBAF /* LaunchScreen.storyboard */; };
+		18DDAA84261F203100A1CBAF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DDAA83261F203100A1CBAF /* LoginView.swift */; };
+		18E4A5422621C06C0095EA86 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A5412621C06C0095EA86 /* SideMenu.swift */; };
+		18E4A5462621C11F0095EA86 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A5452621C11F0095EA86 /* HomeView.swift */; };
+		18E4A54D2621C77C0095EA86 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A54C2621C77C0095EA86 /* TermsView.swift */; };
+		18E4A5502621C81C0095EA86 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A54F2621C81C0095EA86 /* PrivacyView.swift */; };
+		18E4A5532621C8260095EA86 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A5522621C8260095EA86 /* ProfileView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1843E812262066F800154CC9 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		18AE7DCD261F50D7007F7C98 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		18AE7DD0261F5107007F7C98 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePIcker.swift; sourceTree = "<group>"; };
+		18DDAA67261F1EBD00A1CBAF /* pinkwalljmg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinkwalljmg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18DDAA6A261F1EBD00A1CBAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18DDAA6C261F1EBD00A1CBAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18DDAA6E261F1EBD00A1CBAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18DDAA71261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pinkwalljmg.xcdatamodel; sourceTree = "<group>"; };
+		18DDAA73261F1EBF00A1CBAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18DDAA76261F1EBF00A1CBAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18DDAA79261F1EBF00A1CBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18DDAA7B261F1EBF00A1CBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18DDAA83261F203100A1CBAF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		18E4A5412621C06C0095EA86 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		18E4A5452621C11F0095EA86 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		18E4A54C2621C77C0095EA86 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		18E4A54F2621C81C0095EA86 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		18E4A5522621C8260095EA86 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18DDAA64261F1EBD00A1CBAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18AE7DD3261F6688007F7C98 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */,
+				1843E812262066F800154CC9 /* CheckBoxView.swift */,
+				18E4A5412621C06C0095EA86 /* SideMenu.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		18DDAA5E261F1EBD00A1CBAF = {
+			isa = PBXGroup;
+			children = (
+				18DDAA69261F1EBD00A1CBAF /* pinkwalljmg */,
+				18DDAA68261F1EBD00A1CBAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18DDAA68261F1EBD00A1CBAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18DDAA67261F1EBD00A1CBAF /* pinkwalljmg.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18DDAA69261F1EBD00A1CBAF /* pinkwalljmg */ = {
+			isa = PBXGroup;
+			children = (
+				18E4A5442621C1120095EA86 /* Home */,
+				18AE7DD3261F6688007F7C98 /* ImagePicker */,
+				18DDAA82261F1F5300A1CBAF /* UserViewController */,
+				18DDAA6A261F1EBD00A1CBAF /* AppDelegate.swift */,
+				18DDAA6C261F1EBD00A1CBAF /* SceneDelegate.swift */,
+				18DDAA6E261F1EBD00A1CBAF /* ContentView.swift */,
+				18DDAA73261F1EBF00A1CBAF /* Assets.xcassets */,
+				18DDAA78261F1EBF00A1CBAF /* LaunchScreen.storyboard */,
+				18DDAA7B261F1EBF00A1CBAF /* Info.plist */,
+				18DDAA70261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld */,
+				18DDAA75261F1EBF00A1CBAF /* Preview Content */,
+			);
+			path = pinkwalljmg;
+			sourceTree = "<group>";
+		};
+		18DDAA75261F1EBF00A1CBAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18DDAA76261F1EBF00A1CBAF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18DDAA82261F1F5300A1CBAF /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18DDAA83261F203100A1CBAF /* LoginView.swift */,
+				18AE7DCD261F50D7007F7C98 /* SignupView.swift */,
+				18AE7DD0261F5107007F7C98 /* ForgotPasswordView.swift */,
+			);
+			path = UserViewController;
+			sourceTree = "<group>";
+		};
+		18E4A5442621C1120095EA86 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18E4A5452621C11F0095EA86 /* HomeView.swift */,
+				18E4A54C2621C77C0095EA86 /* TermsView.swift */,
+				18E4A54F2621C81C0095EA86 /* PrivacyView.swift */,
+				18E4A5522621C8260095EA86 /* ProfileView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18DDAA66261F1EBD00A1CBAF /* pinkwalljmg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18DDAA7E261F1EBF00A1CBAF /* Build configuration list for PBXNativeTarget "pinkwalljmg" */;
+			buildPhases = (
+				18DDAA63261F1EBD00A1CBAF /* Sources */,
+				18DDAA64261F1EBD00A1CBAF /* Frameworks */,
+				18DDAA65261F1EBD00A1CBAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pinkwalljmg;
+			productName = pinkwalljmg;
+			productReference = 18DDAA67261F1EBD00A1CBAF /* pinkwalljmg.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18DDAA5F261F1EBD00A1CBAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					18DDAA66261F1EBD00A1CBAF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 18DDAA62261F1EBD00A1CBAF /* Build configuration list for PBXProject "pinkwalljmg" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18DDAA5E261F1EBD00A1CBAF;
+			productRefGroup = 18DDAA68261F1EBD00A1CBAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18DDAA66261F1EBD00A1CBAF /* pinkwalljmg */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18DDAA65261F1EBD00A1CBAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DDAA7A261F1EBF00A1CBAF /* LaunchScreen.storyboard in Resources */,
+				18DDAA77261F1EBF00A1CBAF /* Preview Assets.xcassets in Resources */,
+				18DDAA74261F1EBF00A1CBAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18DDAA63261F1EBD00A1CBAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AE7DCE261F50D7007F7C98 /* SignupView.swift in Sources */,
+				18E4A5502621C81C0095EA86 /* PrivacyView.swift in Sources */,
+				18AE7DD1261F5107007F7C98 /* ForgotPasswordView.swift in Sources */,
+				18DDAA72261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld in Sources */,
+				18DDAA6B261F1EBD00A1CBAF /* AppDelegate.swift in Sources */,
+				1843E813262066F800154CC9 /* CheckBoxView.swift in Sources */,
+				18E4A5462621C11F0095EA86 /* HomeView.swift in Sources */,
+				18DDAA6D261F1EBD00A1CBAF /* SceneDelegate.swift in Sources */,
+				18AE7DD5261F66A0007F7C98 /* ImagePIcker.swift in Sources */,
+				18E4A54D2621C77C0095EA86 /* TermsView.swift in Sources */,
+				18E4A5422621C06C0095EA86 /* SideMenu.swift in Sources */,
+				18DDAA84261F203100A1CBAF /* LoginView.swift in Sources */,
+				18E4A5532621C8260095EA86 /* ProfileView.swift in Sources */,
+				18DDAA6F261F1EBD00A1CBAF /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18DDAA78261F1EBF00A1CBAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18DDAA79261F1EBF00A1CBAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18DDAA7C261F1EBF00A1CBAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18DDAA7D261F1EBF00A1CBAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18DDAA7F261F1EBF00A1CBAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"pinkwalljmg/Preview Content\"";
+				DEVELOPMENT_TEAM = R99R64PAKE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = pinkwalljmg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinkwalljmg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pink_dev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		18DDAA80261F1EBF00A1CBAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"pinkwalljmg/Preview Content\"";
+				DEVELOPMENT_TEAM = R99R64PAKE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = pinkwalljmg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinkwalljmg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = pink_dev;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DDAA62261F1EBD00A1CBAF /* Build configuration list for PBXProject "pinkwalljmg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DDAA7C261F1EBF00A1CBAF /* Debug */,
+				18DDAA7D261F1EBF00A1CBAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18DDAA7E261F1EBF00A1CBAF /* Build configuration list for PBXNativeTarget "pinkwalljmg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DDAA7F261F1EBF00A1CBAF /* Debug */,
+				18DDAA80261F1EBF00A1CBAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18DDAA70261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18DDAA71261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodel */,
+			);
+			currentVersion = 18DDAA71261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodel */;
+			path = pinkwalljmg.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18DDAA5F261F1EBD00A1CBAF /* Project object */;
+}
