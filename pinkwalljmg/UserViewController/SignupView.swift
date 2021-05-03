@@ -144,7 +144,43 @@ struct SignupView: View {
                     Spacer()
                         .frame(height: 50.0)
                     
-                    Button(action: {}) {
+                    Button(action: {
+                        if name == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter first name")
+                        }else if email == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter email address")
+                        }else if !Utilities.sharedInstance.isValidEmail(testStr: email){
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter valid email address")
+                        }else if location == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter location")
+                        }else if phone == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter phone number")
+                        }else if password == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter password")
+                        }else if checkedTerms == false{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please select terms & conditions")
+                        }else if checkedPrivacy == false{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please select privacy policy")
+                        }else{
+                            SignupEP.signup(user_email: email, user_pass: password, display_name: name, phone: phone, username: name, address: location).request(showSpinner: true) { (response) in
+                                if response != nil {
+                                    
+                                    if response != nil {
+                                        guard let obj = response as? LoginModel else {
+                                            return
+                                        }
+                                        self.presentationMode.wrappedValue.dismiss()
+                                        Toast.shared.showAlert(type: .success, message: obj.message ?? "")
+                                        
+                                    }
+                                }
+                            } error: { (error) in
+                                
+                            }
+
+                        }
+                        
+                    }) {
                         Text("Submit").padding()
                     }.foregroundColor(.white)
                     

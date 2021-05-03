@@ -20,7 +20,7 @@ struct ForgotPasswordView: View {
                 VStack(alignment: .leading){
                     HStack(){
                         Spacer()
-                        Image("withdraw")
+                        Image("blogiconstwo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(.top, 50.0)
@@ -57,7 +57,26 @@ struct ForgotPasswordView: View {
                     Spacer()
                         .frame(height: 50.0)
                     
-                    Button(action: {}) {
+                    Button(action: {
+                        if email == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter email address")
+                        }else if !Utilities.sharedInstance.isValidEmail(testStr: email){
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter valid email address")
+                        }else{
+                            SignupEP.forgetpassword(user_email: email).request(showSpinner: true) { (response) in
+                                if response != nil {
+                                    guard let obj = response as? DefaultModel else {
+                                        return
+                                    }
+                                    Toast.shared.showAlert(type: .success, message: obj.message ?? "")
+                                    self.presentationMode.wrappedValue.dismiss()
+                                }
+                            } error: { (error) in
+                                
+                            }
+                        }
+                        
+                    }) {
                         Text("Submit").padding()
                     }.foregroundColor(.white)
                     

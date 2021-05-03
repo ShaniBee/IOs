@@ -1,0 +1,6 @@
+framework module Pods_pinkwalljmg {
+  umbrella header "Pods-pinkwalljmg-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -25,7 +25,7 @@ struct LoginView: View {
                 VStack(alignment: .leading){
                     HStack(){
                         Spacer()
-                        Image("withdraw")
+                        Image("blogiconstwo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(.top, 50.0)
@@ -71,7 +71,29 @@ struct LoginView: View {
                         .frame(height: 50.0)
                     
                     Button(action: {
-                        onClickHome = true
+                        if email == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter email")
+                        }else if !Utilities.sharedInstance.isValidEmail(testStr: email){
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter valid email address")
+                        } else if password == ""{
+                            Toast.shared.showAlert(type: .validationFailure, message: "Please enter password")
+                        }else{
+                            SignupEP.login(user_email: email, user_pass: password).request(showSpinner: true) { (response) in
+                                if response != nil {
+                                    guard let obj = response as? LoginModel else {
+                                        return
+                                    }
+                                    onClickHome = true
+                                    Toast.shared.showAlert(type: .success, message: obj.message ?? "")
+                                }
+                                
+                            } error: { (error) in
+                                
+                            }
+
+                            
+                        }
+                        
                     }) {
                         Text("Sign In").padding()
                     }.foregroundColor(.white)

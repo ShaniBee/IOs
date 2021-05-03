@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - QuickLayout (3.0.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - SwiftEntryKit (1.2.7):
+    - QuickLayout (= 3.0.0)
+
+DEPENDENCIES:
+  - Moya
+  - NVActivityIndicatorView (= 4.8.0)
+  - SDWebImage
+  - SwiftEntryKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - NVActivityIndicatorView
+    - QuickLayout
+    - SDWebImage
+    - SwiftEntryKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
+
+PODFILE CHECKSUM: 4db99ed99eee07780248cf7e4c5f66bae40cd638
+
+COCOAPODS: 1.10.1
