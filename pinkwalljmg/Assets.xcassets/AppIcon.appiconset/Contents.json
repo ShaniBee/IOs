@@ -1,55 +1,55 @@
 {
   "images" : [
     {
-      "filename" : "blogiconstwo-8.png",
+      "filename" : "s-8.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "blogiconstwo-6.png",
+      "filename" : "s-7.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "blogiconstwo-7.png",
+      "filename" : "s-5.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "blogiconstwo-4.png",
+      "filename" : "s-4.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "blogiconstwo-5.png",
+      "filename" : "s-6.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "blogiconstwo-3.png",
+      "filename" : "s-3.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "blogiconstwo-2.png",
+      "filename" : "s-2.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "blogiconstwo-1.png",
+      "filename" : "s-1.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "blogiconstwo.png",
+      "filename" : "s.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
