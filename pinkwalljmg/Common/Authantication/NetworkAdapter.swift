@@ -24,20 +24,26 @@ struct VerbosePlugin: PluginType {
     let verbose: Bool
 
     func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
-        #if DEBUG
+       
         if let body = request.httpBody,
            let str = String(data: body, encoding: .utf8) {
             print("request to send: \(str))")
         }
-        #endif
-        return request
+        var re = request
+        re.cachePolicy = .reloadIgnoringLocalCacheData
+        re.httpShouldHandleCookies = false
+        
+        return re
     }
 }
+
+
+
 
 extension TargetType {
     
     func provider<T: TargetType>() -> MoyaProvider<T> {
-        return MoyaProvider<T>(plugins: [VerbosePlugin(verbose: true)])
+        return MoyaProvider<T>(plugins: [(NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)),VerbosePlugin(verbose: false)])
     }
     
     func request(showSpinner: Bool? = true, success successCallBack: @escaping (Any?) -> Void, error errorCallBack: ((String?) -> Void)? = nil) {
@@ -48,8 +54,10 @@ extension TargetType {
            NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
         }
         
+        
         provider().request(self) { (result) in
             //Hide Loader after getting response
+            
             NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
            
             switch result {

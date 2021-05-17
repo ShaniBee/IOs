@@ -9,5 +9,8 @@ target 'pinkwalljmg' do
 pod 'Moya'
  pod 'NVActivityIndicatorView', "4.8.0"
  pod 'SwiftEntryKit'
-pod 'SDWebImage'
+pod 'URLImage'
+pod 'GooglePlaces'
+pod 'SDWebImageSwiftUI'
+pod 'YouTubePlayer'
 end

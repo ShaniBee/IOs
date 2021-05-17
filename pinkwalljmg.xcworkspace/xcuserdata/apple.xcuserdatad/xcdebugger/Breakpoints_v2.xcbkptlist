@@ -7,81 +7,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E3EE2264-76FB-4546-872C-D62752E0A670"
-            shouldBeEnabled = "Yes"
+            uuid = "366A0A5A-C05A-4DF8-B112-E152A9208E2F"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pinkwalljmg/Common/Authantication/NetworkAdapter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "request(showSpinner:success:error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7CC297D3-ACA4-4323-AA29-6C40E840CA9C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "pinkwalljmg/Common/Authantication/NetworkAdapter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "request(showSpinner:success:error:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CBC4A381-52A0-4472-A36C-004F8140EF2A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "pinkwalljmg/Common/Authantication/NetworkAdapter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "request(showSpinner:success:error:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "CBC4A381-52A0-4472-A36C-004F8140EF2A - bcfeb1a52f475732"
+                  uuid = "366A0A5A-C05A-4DF8-B112-E152A9208E2F - ccfb7eda486b81db"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in (extension in pinkwalljmg):Moya.TargetType.request(showSpinner: Swift.Optional&lt;Swift.Bool&gt;, success: (Swift.Optional&lt;Any&gt;) -&gt; (), error: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;) -&gt; ()"
+                  symbolName = "(extension in pinkwalljmg):Moya.TargetType.request(showSpinner: Swift.Optional&lt;Swift.Bool&gt;, success: (Swift.Optional&lt;Any&gt;) -&gt; (), error: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;) -&gt; ()"
                   moduleName = "pinkwalljmg"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/kes/pinkwalljmg/pinkwalljmg/Common/Authantication/NetworkAdapter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "724">
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "886">
                </Location>
                <Location
-                  uuid = "CBC4A381-52A0-4472-A36C-004F8140EF2A - bcfeb1a52f475732"
+                  uuid = "366A0A5A-C05A-4DF8-B112-E152A9208E2F - 5e4934b23173742b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in (extension in pinkwalljmg):Moya.TargetType.request(showSpinner: Swift.Optional&lt;Swift.Bool&gt;, success: (Swift.Optional&lt;Any&gt;) -&gt; (), error: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;) -&gt; ()"
+                  symbolName = "closure #1 (Result.Result&lt;Moya.Response, Moya.MoyaError&gt;) -&gt; () in (extension in pinkwalljmg):Moya.TargetType.request(showSpinner: Swift.Optional&lt;Swift.Bool&gt;, success: (Swift.Optional&lt;Any&gt;) -&gt; (), error: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;) -&gt; ()"
                   moduleName = "pinkwalljmg"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/kes/pinkwalljmg/pinkwalljmg/Common/Authantication/NetworkAdapter.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "822">
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "640">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFAA35AD-3C24-4EC3-B288-0F5D59E8DCAC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pinkwalljmg/Common/Authantication/LoginSignup+API.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "sampleData"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA357F0C-79DF-4A65-8BDA-03497088ECAD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pinkwalljmg/Home/CommentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C03841E4-89A7-4FAC-BC35-1BCE9714CFD5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pinkwalljmg/Home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

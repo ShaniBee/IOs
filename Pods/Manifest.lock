@@ -1,42 +1,84 @@
 PODS:
-  - Alamofire (5.4.1)
-  - Moya (14.0.0):
-    - Moya/Core (= 14.0.0)
-  - Moya/Core (14.0.0):
-    - Alamofire (~> 5.0)
+  - Alamofire (4.9.1)
+  - GoogleMaps/Base (4.2.0)
+  - GooglePlaces (4.2.0):
+    - GoogleMaps/Base (= 4.2.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
   - QuickLayout (3.0.0)
+  - Result (4.1.0)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
+  - SDWebImageSwiftUI (2.0.2):
+    - SDWebImage (~> 5.10)
   - SwiftEntryKit (1.2.7):
     - QuickLayout (= 3.0.0)
+  - URLImage (2.2.5):
+    - URLImage/Common (= 2.2.5)
+    - URLImage/DownloadManager (= 2.2.5)
+    - URLImage/FileIndex (= 2.2.5)
+    - URLImage/ImageDecoder (= 2.2.5)
+    - URLImage/Log (= 2.2.5)
+    - URLImage/PlainDatabase (= 2.2.5)
+    - URLImage/RemoteContentView (= 2.2.5)
+  - URLImage/Common (2.2.5)
+  - URLImage/DownloadManager (2.2.5):
+    - URLImage/Log
+  - URLImage/FileIndex (2.2.5):
+    - URLImage/Common
+    - URLImage/Log
+    - URLImage/PlainDatabase
+  - URLImage/ImageDecoder (2.2.5)
+  - URLImage/Log (2.2.5)
+  - URLImage/PlainDatabase (2.2.5)
+  - URLImage/RemoteContentView (2.2.5)
+  - YouTubePlayer (0.7.2)
 
 DEPENDENCIES:
+  - GooglePlaces
   - Moya
   - NVActivityIndicatorView (= 4.8.0)
-  - SDWebImage
+  - SDWebImageSwiftUI
   - SwiftEntryKit
+  - URLImage
+  - YouTubePlayer
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - GoogleMaps
+    - GooglePlaces
     - Moya
     - NVActivityIndicatorView
     - QuickLayout
+    - Result
     - SDWebImage
+    - SDWebImageSwiftUI
     - SwiftEntryKit
+    - URLImage
+    - YouTubePlayer
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  GoogleMaps: eb03e327edfd70b06de1e6e321653f73712df7ad
+  GooglePlaces: 196a9dd88580dcb3f3df46f415057703d0d2a310
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
   SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
+  URLImage: 36a66c03ba2a9ccbbf06bc83431f2cef171008e8
+  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
 
-PODFILE CHECKSUM: 4db99ed99eee07780248cf7e4c5f66bae40cd638
+PODFILE CHECKSUM: 4222881fc7ce7d4e36d24813e7f393f1648ae8b4
 
 COCOAPODS: 1.10.1

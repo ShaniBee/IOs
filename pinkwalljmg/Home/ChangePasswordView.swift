@@ -71,7 +71,28 @@ struct ChangePasswordView: View {
                             .frame(height: 50.0)
                         
                         Button(action: {
-                            
+                            if oldPassword == ""{
+                                Toast.shared.showAlert(type: .validationFailure, message: "Please enter old password")
+                            }else if newPassword == ""{
+                                Toast.shared.showAlert(type: .validationFailure, message: "Please enter new password")
+                            } else if confirmPassword == ""{
+                                Toast.shared.showAlert(type: .validationFailure, message: "Please enter confirm password")
+                            }else if confirmPassword != newPassword{
+                                Toast.shared.showAlert(type: .validationFailure, message: "New and confirm password not match")
+                            }else{
+                                SignupEP.changePassword(oldPassword: oldPassword, newPassword: newPassword).request(showSpinner: true) { (response) in
+                                    if response != nil {
+                                        guard let obj = response as? DefaultModel else {
+                                            return
+                                        }
+                                        Toast.shared.showAlert(type: .success, message: obj.message ?? "")
+                                        self.presentationMode.wrappedValue.dismiss()
+                                    }
+                                } error: { (error) in
+                                    
+                                }
+
+                            }
                         }) {
                             Text("Reset Password").padding()
                         }.foregroundColor(.white)

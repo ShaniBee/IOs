@@ -15,7 +15,7 @@ class UserPreference {
   static let shared = UserPreference()
     
   
-  var data : UserData? {
+  var data : LoginDataModel? {
     get{
       return fetchData()
     }
@@ -50,19 +50,19 @@ class UserPreference {
         }
     }
   
-  func saveData(_ value: UserData) {
-    guard let data = JSONHelper<UserData>().getData(model: value) else {
+  func saveData(_ value: LoginDataModel) {
+    guard let data = JSONHelper<LoginDataModel>().getData(model: value) else {
       removeData()
       return
     }
     UserDefaults.standard.set(data, forKey: DEFAULTS_KEY)
   }
   
-  func fetchData() -> UserData? {
+  func fetchData() -> LoginDataModel? {
     guard let data = UserDefaults.standard.data(forKey: DEFAULTS_KEY) else {
       return nil
     }
-    return JSONHelper<UserData>().getCodableModel(data: data)
+    return JSONHelper<LoginDataModel>().getCodableModel(data: data)
   }
   
   func removeData() {

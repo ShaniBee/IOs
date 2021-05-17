@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PrivacyView: View {
     @Environment(\.presentationMode) var presentationMode
-    let text: String = "here's ddkddkdskl s dkls"
+    @State var text: String = ""
     var body: some View {
         Color.init("Color_theme").edgesIgnoringSafeArea(.top).overlay(
             VStack(alignment: .leading){
@@ -18,18 +18,20 @@ struct PrivacyView: View {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     },label: { Image(systemName: "arrow.left") }) .padding().frame(width: 50.0, height: 50.0).foregroundColor(Color.white)
-                    Text("Privacy Policy").padding(.trailing, 50.0).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50,alignment: .center).foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                    
+                    Text("Privacy Policy").padding(.trailing, 50.0).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50,alignment: .center).foregroundColor(.white)
+                    
                 }.background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("Color_theme")/*@END_MENU_TOKEN@*/)
                 
-                ScrollView( showsIndicators: false) {
-                    Text(text).multilineTextAlignment(.leading)
-                        .padding(.horizontal, 20.0).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity,alignment: .leading)
-                    
-                }
+                WebView(request:URLRequest(url: URL(string: "https://www.jamaicanmateyangroupie.com/privacy-policy/" )!))
+                    .onDisappear(){
+                        
+                    }.frame(minWidth: 0, idealWidth: 200, maxWidth: .infinity, minHeight: 20, idealHeight: 300, maxHeight: .infinity, alignment: .center)
+
                 
-            }.background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/).navigationBarHidden(true))
-        
-        
+            }.background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/).navigationBarHidden(true)).onAppear(perform: {
+               
+            })
     }
 }
 

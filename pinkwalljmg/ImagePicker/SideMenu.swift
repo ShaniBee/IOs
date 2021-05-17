@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct MenuContent: View {
     @State private var onClickProfile = false
     @State private var onClickTerms = false

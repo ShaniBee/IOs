@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct TabBarView: View {
+    init(){
+        UITabBar.appearance().barTintColor = UIColor.init(named: "Color_theme")
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            TabView{
+                HomeView()
+                    .tabItem {
+                        Image("ic_home")
+                        
+                        Text("Blogs")
+                    }
+                    .tag(1)
+                ProfileView()
+                    .tabItem {
+                        Image("ic_profile")
+                        
+                        Text("Account")
+                    }
+                    .tag(2)
+                
+            }.accentColor(.white)
+        }.navigationBarHidden(true)
     }
 }
 

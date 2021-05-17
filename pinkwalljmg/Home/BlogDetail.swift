@@ -26,9 +26,9 @@ struct BlogDetail: View {
             
             Spacer()
                 .frame(height: 20.0)
-            List(){
-                BlogCell(title: "2",showViewMore: false)
-            }
+//            List(){
+//                BlogCell(title: "2",showViewMore: false)
+//            }
             
             Spacer()
             HStack(){

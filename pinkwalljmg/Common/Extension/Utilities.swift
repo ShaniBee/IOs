@@ -31,21 +31,73 @@ class Utilities: NSObject,UIImagePickerControllerDelegate,UINavigationController
         
     }
     
-    func showAlertViewWithAction(_ title : String, _ message : NSString, _ viewController : UIViewController,completion : (@escaping () -> Void)) -> Void {
+    func showAlertViewWithAction(_ title : String, _ message : NSString,completion : (@escaping () -> Void)) -> Void {
         
         let alertView: UIAlertController = UIAlertController(title: title as String, message: message as String, preferredStyle: .alert)
-
+        
         let okAction: UIAlertAction = UIAlertAction(title: "Ok", style: .default) { action -> Void in
             completion()
         }
         alertView.addAction(okAction)
         
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .default) { action -> Void in
-
+            
         }
         alertView.addAction(cancelAction)
+        let viewController = UIApplication.shared.windows.first!.rootViewController!
         viewController.present(alertView, animated: true, completion: nil)
         
+       // viewController.present(alertView, animated: true, completion: nil)
+        
+    }
+    
+    
+    func reportUser(completion : (@escaping (String ) -> Void)) -> Void{
+        let alertView: UIAlertController = UIAlertController(title: "Report", message: "Why are you reporting this post?" as
+            String, preferredStyle: .actionSheet)
+        
+          
+        
+        let spamAction: UIAlertAction = UIAlertAction(title: "It's Spam", style: .default) { action -> Void in
+            completion("It's Spam")
+        }
+        
+        alertView.addAction(spamAction)
+        
+        let nudityAction: UIAlertAction = UIAlertAction(title: "Nudity or sexual activity", style: .default) { action -> Void in
+            completion("Nudity or sexual activity")
+        }
+        
+        alertView.addAction(nudityAction)
+        
+        let hateAction: UIAlertAction = UIAlertAction(title: "Hate speech or symbols", style: .default) { action -> Void in
+            completion("Hate speech or symbols")
+        }
+        
+        alertView.addAction(hateAction)
+        
+        let fourAction: UIAlertAction = UIAlertAction(title: "Violence or dangerous organizatiobs", style: .default) { action -> Void in
+            completion("Violence or dangerous organizatiobs")
+        }
+        
+        alertView.addAction(fourAction)
+        
+        
+        let fiveAction: UIAlertAction = UIAlertAction(title: "Sale of illegal or regulated goods", style: .default) { action -> Void in
+            completion("Sale of illegal or regulated goods")
+        }
+        
+        alertView.addAction(fiveAction)
+        
+        
+        
+        
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .destructive) { action -> Void in
+        }
+        alertView.addAction(cancelAction)
+        
+        let viewController = UIApplication.shared.windows.first!.rootViewController!
+        viewController.present(alertView, animated: true, completion: nil)
     }
     
     func isValidEmail(testStr:String) -> Bool {
@@ -55,6 +107,22 @@ class Utilities: NSObject,UIImagePickerControllerDelegate,UINavigationController
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
+    
+    func comapreDate(testStr:String, firstContect: String, secondContent: String) -> String {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        if let date = dateFormatter.date(from: testStr) {
+
+            if date < Date() {
+                return firstContect
+            } else {
+                return secondContent
+            }
+        }
+        return firstContect
+    }
+    
     
     func isValidatedPhone(value: String) -> Bool {
         let PHONE_REGEX = "^\\d{9}$"
