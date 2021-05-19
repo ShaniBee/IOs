@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    
+    
+    @EnvironmentObject var settings: UserSettings
     @State var email: String = ""
     @State var password: String = ""
-    
     @State private var onClickForgotPassword = false
     @State private var onClickSignup = false
     @State private var onClickHome = false
+    
+    
     var body: some View {
         NavigationView {
             ScrollView( showsIndicators: false) {
                 
                 NavigationLink(destination: ForgotPasswordView(), isActive: $onClickForgotPassword) {  }
                 NavigationLink(destination: SignupView(), isActive: $onClickSignup) {  }
-                NavigationLink(destination: HomeView(), isActive: $onClickHome) {  }
+                NavigationLink(destination: TabBarView(), isActive: $onClickHome) {  }
                 
                 VStack(alignment: .leading){
                     HStack(){
@@ -41,8 +46,6 @@ struct LoginView: View {
                             .font(.title)
                         
                         
-                        
-                        
                         Text("Email Address")
                             .multilineTextAlignment(.leading)
                             .padding(.top, 30.0)
@@ -53,6 +56,7 @@ struct LoginView: View {
                             .cornerRadius(20)
                             .textContentType(.emailAddress)
                             .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
                         
                         
                         Text("Password")
@@ -78,11 +82,15 @@ struct LoginView: View {
                         } else if password == ""{
                             Toast.shared.showAlert(type: .validationFailure, message: "Please enter password")
                         }else{
+                            
                             SignupEP.login(user_email: email, user_pass: password).request(showSpinner: true) { (response) in
                                 if response != nil {
                                     guard let obj = response as? LoginModel else {
                                         return
                                     }
+                                    UserPreference.shared.data = obj.data
+                                    UserPreference.shared.saveData(obj.data!)
+                                    
                                     onClickHome = true
                                     Toast.shared.showAlert(type: .success, message: obj.message ?? "")
                                 }
@@ -90,7 +98,7 @@ struct LoginView: View {
                             } error: { (error) in
                                 
                             }
-
+                            
                             
                         }
                         
@@ -139,14 +147,11 @@ struct LoginView: View {
                                                    maxHeight: .infinity,
                                                    alignment: .leading
                 )
-                
-                
             }
             .navigationBarHidden(true)
-        }
+        }.navigationBarHidden(true)
         
     }
-    
 }
 
 struct LoginView_Previews: PreviewProvider {

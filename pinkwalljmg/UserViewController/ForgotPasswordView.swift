@@ -48,7 +48,7 @@ struct ForgotPasswordView: View {
                             .cornerRadius(20)
                             .textContentType(.emailAddress)
                             .keyboardType(.emailAddress)
-                        
+                            .autocapitalization(.none)
                         
                         
                     }

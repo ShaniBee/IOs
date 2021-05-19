@@ -6,63 +6,127 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ProfileView: View {
     @Environment(\.presentationMode) var presentationMode
+    @State private var onClickProfile = false
+    @State private var onClickTerms = false
+    @State private var onClickAdmin = false
+    @State var onClickPrivacy = false
+    @State var onClockLogin = false
+    @State private var onClickChangePassword = false
+    @EnvironmentObject var settings: UserSettings
     
     var body: some View {
+        
+        
+        
+        
         Color.init("Color_theme").edgesIgnoringSafeArea(.top).overlay(
             VStack(alignment: .leading){
                 // Navigation View
+                
+                NavigationLink(destination: EditProfile(), isActive: $onClickProfile) {  }
+                NavigationLink(destination: ContactAdmin(), isActive: $onClickAdmin) {  }
+                NavigationLink(destination: TermsView(), isActive: $onClickTerms) {  }
+                NavigationLink(destination: PrivacyView(), isActive: $onClickPrivacy) {  }
+                NavigationLink(destination: LoginView(), isActive: $onClockLogin) {  }
+                NavigationLink(destination: ChangePasswordView(), isActive: $onClickChangePassword) {  }
+                
+                    //
                 HStack(){
-                    Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
-                    },label: { Image(systemName: "arrow.left") }) .padding().frame(width: 50.0, height: 50.0).foregroundColor(Color.white)
-                    Text("Profile").padding(.trailing, 50.0).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50,alignment: .center)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                    Text("Profile").padding(.trailing, 0).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50,alignment: .center).foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                 }.background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("Color_theme")/*@END_MENU_TOKEN@*/)
                 
-                ScrollView( showsIndicators: false) {
+                HStack(){
                     Spacer()
-                        .frame(height: 30.0)
-                    HStack(){
-                        Spacer()
-                        Image(systemName: "person.crop.circle.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 160.0, height: 160.0)
-                        Spacer()
-                    }
-                }.frame(minWidth: 0,
-                        maxWidth: .infinity,
-                        minHeight: 40,
-                        maxHeight: 200,
-                        alignment: .top)
+                    WebImage(url: URL(string: UserPreference.shared.data?.image ?? ""))
+                        .resizable()
+                        .placeholder(Image(systemName: "person.crop.circle.fill"))
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 160.0, height: 160.0)
+                        .clipShape(Circle())
+                    
+                        
+//                    Image(systemName: "person.crop.circle.fill")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: 160.0, height: 160.0)
+                    Spacer()
+                }
+                
+                HStack(){
+                    Spacer()
+                    Text(UserPreference.shared.data?.display_name ?? "aa")
+                        .foregroundColor(Color.black)
+                    Spacer()
+                }
                 
                 List {
                     HStack(){
-                        Text("Name:")
+                        Text("Profile")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(Color.white)
                             .foregroundColor(Color.black)
-                        Spacer().frame(width: 10.0)
-                        Text("Rajit Rana").foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+                            .onTapGesture {
+                                print("Posts")
+                                self.onClickProfile = true
+                            }
+                        
+                    }
+//                    HStack(){
+//                        Text("Contact with Admin").frame(maxWidth: .infinity, alignment: .leading)
+//                            .background(Color.white)
+//                            .foregroundColor(Color.black)
+//                            .onTapGesture {
+//                                print("Posts")
+//                                self.onClickAdmin = true
+//                            }
+//
+//                    }
+                    HStack(){
+                        Text("Change Password")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(Color.white)
+                            .foregroundColor(Color.black)
+                        
+                    }.onTapGesture {
+                        print("Posts")
+                        self.onClickChangePassword = true
                     }
                     HStack(){
-                        Text("Email:")
+                        Text("Terms & Condition")
                             .foregroundColor(Color.black)
-                        Spacer().frame(width: 10.0)
-                        Text("Rajit@gmail.com ").foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(Color.white)
+                    }.onTapGesture {
+                        print("Posts")
+                        self.onClickTerms = true
                     }
                     HStack(){
-                        Text("Phone:")
+                        Text("Privacy Policy")
                             .foregroundColor(Color.black)
-                        Spacer().frame(width: 10.0)
-                        Text("3333").foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(Color.white)
+                    }.onTapGesture {
+                        print("Posts")
+                        self.onClickPrivacy = true
                     }
                     HStack(){
-                        Text("Location:")
+                        Text("Log Out")
                             .foregroundColor(Color.black)
-                        Spacer().frame(width: 10.0)
-                        Text("Mohali").foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                                .background(Color.white)
+                    }.onTapGesture {
+                        print("Posts")
+                        
+                        Utilities.sharedInstance.showAlertViewWithAction("", "Are you sure you want to logout?") {
+                            UserPreference.shared.data = nil
+                            self.onClockLogin = true
+                           
+
+                        }
                     }
                 }
                 .padding(10)
