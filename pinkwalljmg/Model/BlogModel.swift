@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct BlogModel: Codable {
     
@@ -201,13 +202,13 @@ struct BlogCommentUserModel: Codable {
 public class MovieFetcher: ObservableObject {
     @Published var blogs = [BlogDataModel]()
     @Published var blogDetail : BlogDataModel?
-    
+    @EnvironmentObject var settings: UserSettings
     var nextApiCall : Bool = false
     var firstTimeCall : Bool = true
+    
+    @Published var userLogout : Bool = false
     var currretPageNumber : Int = 0
-    init(){
-        
-    }
+    
     
     func load(pageNumber: Int) {
         currretPageNumber = currretPageNumber + 1
@@ -231,33 +232,29 @@ public class MovieFetcher: ObservableObject {
                 }
             }
         } error: { (error) in
-            
+            self.userLogout = true
         }
         
     }
     
     func loadSearch(pageNumber: Int, search : String) {
         currretPageNumber = currretPageNumber + 1
-        SignupEP.blogsearch(page: "\(currretPageNumber)", limit: "10", title: search).request(showSpinner: true) { (response) in
+        SignupEP.blogsearch(page: "\(currretPageNumber)", limit: "\(currretPageNumber * 10)", title: search).request(showSpinner: true) { (response) in
             if response != nil {
                 guard let obj = response as? BlogModel else {
                     return
                 }
                 if obj.status == 200{
-                    if obj.body?.count ==  10{
+                    if obj.body?.count ==  (self.currretPageNumber * 10){
                         self.nextApiCall = true
                     }else{
                         self.nextApiCall = false
                     }
-                    if self.currretPageNumber == 1{
-                        self.blogs = obj.body ?? []
-                    }else {
-                        self.blogs.append(contentsOf: obj.body ?? [])
-                    }
+                    self.blogs = obj.body ?? []
                 }
             }
         } error: { (error) in
-            
+            self.userLogout = true
         }
         
     }
@@ -283,7 +280,7 @@ public class MovieFetcher: ObservableObject {
                 
             }
         } error: { (error) in
-            
+            self.userLogout = true
         }
     }
     
@@ -302,7 +299,7 @@ public class MovieFetcher: ObservableObject {
                 }
             }
         } error: { (error) in
-            
+            self.userLogout = true
         }
     }
     
@@ -318,7 +315,7 @@ public class MovieFetcher: ObservableObject {
                 }
             }
         } error: { (error) in
-            
+            self.userLogout = true
         }
     }
     
@@ -333,7 +330,7 @@ public class MovieFetcher: ObservableObject {
                 
             }
         } error: { (error) in
-            
+            self.userLogout = true
         }
     }
 }

@@ -21,17 +21,15 @@ struct CommentView: View {
     
     @ObservedObject private var keyboard = KeyboardResponder()
     
-    //    init() {
-    //            UITableView.appearance().separatorStyle = .none
-    //            UITableView.appearance().tableFooterView = UIView()
-    //        }
-    
-    var body: some View {
+     var body: some View {
         Color.init("Color_theme").edgesIgnoringSafeArea(.top).overlay(
             VStack(alignment: .leading){
                 // Navigation View
                 HStack(){
                     Button(action: {
+                        
+                        self.fetcher.blogs[blogId ?? 0].comment_count = self.fetcher.blogDetail?.comment_count
+                        
                         self.presentationMode.wrappedValue.dismiss()
                     },label: { Image(systemName: "arrow.left") }) .padding().frame(width: 50.0, height: 50.0).foregroundColor(Color.white)
                     

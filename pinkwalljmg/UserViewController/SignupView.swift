@@ -8,6 +8,8 @@
 import SwiftUI
 import GooglePlaces
 
+import Combine
+
 struct SignupView: View {
     @State private var isShowPhotoLibrary = false
     // @State private var image = UIImage()
@@ -140,6 +142,7 @@ struct SignupView: View {
                                 .cornerRadius(20)
                                 .textContentType(.telephoneNumber)
                                 .keyboardType(.phonePad)
+                                .onReceive(Just(phone)) { _ in limitText(10) }
                         }
                         
                         
@@ -297,6 +300,11 @@ struct SignupView: View {
         }.navigationBarHidden(true)
     }
     
+    func limitText(_ upper: Int) {
+        if phone.count > upper {
+            phone = String(phone.prefix(upper))
+        }
+    }
 }
 
 

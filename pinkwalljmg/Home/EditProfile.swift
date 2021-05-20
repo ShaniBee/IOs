@@ -8,6 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 import URLImage
+import Combine
 
 struct EditProfile: View {
     @Environment(\.presentationMode) var presentationMode
@@ -139,7 +140,7 @@ struct EditProfile: View {
                                 .frame(height: 40.0)
                                 .background(Color(red: 0.826, green: 0.808, blue: 0.859, opacity: 0.28))
                                 .cornerRadius(20)
-                                
+                            
                             
                             Text("Email Address")
                                 .multilineTextAlignment(.leading)
@@ -182,6 +183,7 @@ struct EditProfile: View {
                                     .cornerRadius(20)
                                     .textContentType(.telephoneNumber)
                                     .keyboardType(.phonePad)
+                                    .onReceive(Just(phone)) { _ in limitText(10) }
                             }
                             
                             
@@ -272,6 +274,12 @@ struct EditProfile: View {
                 
                 
             }
+    }
+    
+    func limitText(_ upper: Int) {
+        if phone.count > upper {
+            phone = String(phone.prefix(upper))
+        }
     }
 }
 

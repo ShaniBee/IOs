@@ -9,6 +9,7 @@
 import Foundation
 import Moya
 import NVActivityIndicatorView
+import SwiftUI
 
 private func JSONResponseDataFormatter(_ data: Data) -> Data {
     do {
@@ -102,8 +103,14 @@ extension TargetType {
                 case 401:
                     do {
                         let json = try JSONSerialization.jsonObject(with: response.data, options: []) as? [String : Any]
-                        Toast.shared.showAlert(type: .validationFailure, message: /(json?["message"] as? String))
-                        errorCallBack?(/(json?["message"] as? String))
+                        if /(json?["message"] as? String) == "Invaild Authorization"{
+                            errorCallBack?(/(json?["message"] as? String))
+                            self.logOut()
+                        }else{
+                            Toast.shared.showAlert(type: .validationFailure, message: /(json?["message"] as? String))
+                            errorCallBack?(/(json?["message"] as? String))
+                        }
+                        
                     } catch {
                         Toast.shared.showAlert(type: .apiFailure, message: error.localizedDescription)
                     }
@@ -132,11 +139,49 @@ extension TargetType {
         }
     }
   
+    
+    
     //MARK: - Logout
     fileprivate func logOut() {
-      //  UserPreference.shared.data = nil
-//        let destVC = StoryBoard.Main.instantiateViewController(withIdentifier: "InitVC")
-//        UIApplication.shared.keyWindow?.rootViewController = destVC
+        UserPreference.shared.data = nil
+    
+        
+        if UIApplication.shared.windows.count > 0{
+            if let windowScene = UIApplication.shared.windows[0].windowScene as? UIWindowScene {
+                var windows = UIApplication.shared.windows[0].window?.rootViewController
+                if let windowss = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first {
+                    var s = windowss
+                   
+                    
+                    let settings = UserSettings()
+                    DispatchQueue.main.async {
+                        if let windowScene = windowScene as? UIWindowScene {
+                            let window = UIWindow(windowScene: windowScene)
+                            
+                            settings.loggedIn = false
+                            window.rootViewController = UIHostingController(rootView: StartView().environmentObject(settings))
+                            let scene = UIApplication.shared.connectedScenes.first
+                            if let sd : SceneDelegate = (scene?.delegate as? SceneDelegate) {
+                                sd.window = window
+                                window.makeKeyAndVisible()
+                            }
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+//                                s = window
+//
+//                            }
+                            
+                            //  reloadDashboard()
+                        }
+                    }
+                    
+                    
+                    
+                    
+                }
+                
+            }
+        }
+        
     }
     
 }

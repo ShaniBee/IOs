@@ -22,25 +22,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-        
+        let settings = UserSettings()
         if UserPreference.shared.data?.token ?? "" == "" {
-            let contentView = LoginView().environment(\.managedObjectContext, context)
-            
-            // Use a UIHostingController as window root view controller.
             if let windowScene = scene as? UIWindowScene {
                 let window = UIWindow(windowScene: windowScene)
-                window.rootViewController = UIHostingController(rootView: contentView)
+                
+                settings.loggedIn = false
+                window.rootViewController = UIHostingController(rootView: StartView().environmentObject(settings))
                 self.window = window
                 window.makeKeyAndVisible()
                 //  reloadDashboard()
             }
         } else {
-            let contentView = TabBarView().environment(\.managedObjectContext, context)
-            
-            // Use a UIHostingController as window root view controller.
             if let windowScene = scene as? UIWindowScene {
+                settings.loggedIn = true
                 let window = UIWindow(windowScene: windowScene)
-                window.rootViewController = UIHostingController(rootView: contentView)
+                window.rootViewController = UIHostingController(rootView: StartView().environmentObject(settings))
                 self.window = window
                 window.makeKeyAndVisible()
                 //  reloadDashboard()

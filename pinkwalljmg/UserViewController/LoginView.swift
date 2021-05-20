@@ -25,7 +25,7 @@ struct LoginView: View {
                 
                 NavigationLink(destination: ForgotPasswordView(), isActive: $onClickForgotPassword) {  }
                 NavigationLink(destination: SignupView(), isActive: $onClickSignup) {  }
-                NavigationLink(destination: TabBarView(), isActive: $onClickHome) {  }
+               // NavigationLink(destination: TabBarView(), isActive: $onClickHome) {  }
                 
                 VStack(alignment: .leading){
                     HStack(){
@@ -91,7 +91,8 @@ struct LoginView: View {
                                     UserPreference.shared.data = obj.data
                                     UserPreference.shared.saveData(obj.data!)
                                     
-                                    onClickHome = true
+                                    settings.loggedIn = true
+                                    //onClickHome = true
                                     Toast.shared.showAlert(type: .success, message: obj.message ?? "")
                                 }
                                 

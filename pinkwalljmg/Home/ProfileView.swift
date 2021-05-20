@@ -31,7 +31,7 @@ struct ProfileView: View {
                 NavigationLink(destination: ContactAdmin(), isActive: $onClickAdmin) {  }
                 NavigationLink(destination: TermsView(), isActive: $onClickTerms) {  }
                 NavigationLink(destination: PrivacyView(), isActive: $onClickPrivacy) {  }
-                NavigationLink(destination: LoginView(), isActive: $onClockLogin) {  }
+                
                 NavigationLink(destination: ChangePasswordView(), isActive: $onClickChangePassword) {  }
                 
                     //
@@ -123,7 +123,7 @@ struct ProfileView: View {
                         
                         Utilities.sharedInstance.showAlertViewWithAction("", "Are you sure you want to logout?") {
                             UserPreference.shared.data = nil
-                            self.onClockLogin = true
+                            self.settings.loggedIn  = false
                            
 
                         }

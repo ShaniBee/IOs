@@ -14,8 +14,8 @@
             filePath = "pinkwalljmg/Common/Authantication/NetworkAdapter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "request(showSpinner:success:error:)"
             landmarkType = "7">
             <Locations>
@@ -71,15 +71,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CB919E3B-9A63-4E47-972D-68776EC21998"
+            uuid = "E27E7D80-C86A-41F4-8376-E6EF7145B492"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pinkwalljmg/Home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -87,17 +87,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "80B787BB-7D18-4610-8D7F-325BF1915950"
+            uuid = "1E1BE9DF-AC9D-43CA-8343-7E6BED363D8C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "pinkwalljmg/Home/HomeView.swift"
+            filePath = "pinkwalljmg/Model/BlogModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "loadSearch(pageNumber:search:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1E1BE9DF-AC9D-43CA-8343-7E6BED363D8C - 934f75376efb6f85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pinkwalljmg.MovieFetcher.loadSearch(pageNumber: Swift.Int, search: Swift.String) -&gt; ()"
+                  moduleName = "pinkwalljmg"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/Proto/pinkwalljmg/pinkwalljmg/Model/BlogModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "242"
+                  endingLineNumber = "242"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "1E1BE9DF-AC9D-43CA-8343-7E6BED363D8C - 66e28605eb032bc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Any&gt;) -&gt; () in pinkwalljmg.MovieFetcher.loadSearch(pageNumber: Swift.Int, search: Swift.String) -&gt; ()"
+                  moduleName = "pinkwalljmg"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Desktop/Proto/pinkwalljmg/pinkwalljmg/Model/BlogModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "243"
+                  endingLineNumber = "243"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

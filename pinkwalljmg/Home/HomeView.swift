@@ -14,16 +14,21 @@ struct HomeView: View {
     @State var menuOpen: Bool = false
     
     @State var CurrentIndex : Int = 0
-    @ObservedObject var fetcher = MovieFetcher()
+    
     let columns = [
         GridItem(.adaptive(minimum: 80))
     ]
     
+    @State private var logOut : Bool = false
+    @ObservedObject var fetcher = MovieFetcher()
     @State private var searchText = ""
     @State private var showCancelButton: Bool = false
     @State private var activityIndicator : Bool = true
     
+   
+    @EnvironmentObject var settings: UserSettings
     var body: some View {
+        
         
         Color.init("Color_theme").edgesIgnoringSafeArea(.top).overlay(
             VStack(alignment: .leading){
@@ -33,6 +38,7 @@ struct HomeView: View {
                     
                     Text("Blog").padding(.trailing, 0).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50,alignment: .center).foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                 }.background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color("Color_theme")/*@END_MENU_TOKEN@*/)
+                
                 
                 
                 HStack {

@@ -97,7 +97,7 @@ extension SignupEP: TargetType {
         case .login(let user_email, let user_pass):
             return ["user_email":user_email, "user_pass":user_pass,"deviceType":"1","deviceToken":""]
         case .forgetpassword(let user_email):
-            return ["user_email":user_email]
+            return ["email":user_email]
         case .signup(let user_email,let user_pass,let display_name,let phone,let username,let address, _):
             return ["user_email":user_email,"user_pass":user_pass,"display_name":display_name,"phone":phone,"username":display_name,"address":address,"deviceType":"1","deviceToken":"deviceToken"]
         case .termsAndConditions:
